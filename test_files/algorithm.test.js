@@ -1,0 +1,1 @@
+import TestAlgorithmName from '../src/algorithm';
