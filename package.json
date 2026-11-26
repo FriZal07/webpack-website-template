@@ -30,6 +30,7 @@
     "webpack-merge": "^6.0.1"
   },
   "scripts": {
+    "test": "jest",
     "dev": "webpack serve --config webpack.dev.js",
 
     "setup": "git checkout --orphan gh-pages && git rm -rf . && git commit --allow-empty -m init && git push -u origin gh-pages && git checkout main",
