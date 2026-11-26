@@ -30,11 +30,10 @@
     "webpack-merge": "^6.0.1"
   },
   "scripts": {
+    "dev": "webpack serve --config webpack.dev.js",
+
     "setup": "git checkout --orphan gh-pages && git rm -rf . && git commit --allow-empty -m init && git push -u origin gh-pages && git checkout main",
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js",
-    "gitadd": "git add dist -f",
-    "gitqdcommit": "git commit -m 'quick deploy'",
     "deploy": "git worktree add .deploy gh-pages && cp -r dist/. .deploy/ && git -C .deploy add -A && git -C .deploy commit -m deploy && git -C .deploy push && git worktree remove .deploy"
   }
 }
