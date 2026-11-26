@@ -38,11 +38,11 @@ Run these commands in your terminal to manage the project lifecycle:
 
 * npm run dev: Starts the webpack-dev-server using webpack.dev.js for local development with live-reloading.
 
+* npm run setup: Code need to run THE FIRST TIME, to setup the second branch.
+
 * npm run build: Compiles production-ready, minified code into the dist directory using webpack.prod.js.
 
-* npm run deploy: Forces a deployment of the current dist folder directly to the gh-pages branch. This script bypasses standard Git tracking conflicts by isolating the dist tree and pushing it forcefully.\
-
-(Utility Scripts: "npm run gitadd" forcefully stages the ignored dist folder, and "npm run gitqdcommit" generates a generic "quick deploy" commit message. These are largely handled by the primary deploy script).
+* npm run deploy: Forces a deployment of the current dist folder directly to the gh-pages branch.
 
 --------------------------------------------
 
